@@ -50,3 +50,37 @@ INSERT INTO courses (userid, subjectid, subjectname, prerequisite, year, sem, co
 (1, 'T201', 'Network Services', 'T101', 1, 2, 'Elective', 'Not Available', 105, 'To implement key network services as used in modern LANs and to explain the network protocols that these services use. Learning Outcomes: Analyse and evaluate network services. Implement and configure network services. Analyse and diagnose faults within network services.'),
 (1, 'T205', 'Networks (Cisco ITN)', NULL, 2, 1, 'Elective', 'Available', 105, 'To enable students to gain practical and technical networking knowledge that will assist in designing, building and analysing networks and their protocols. Learning Outcomes: Describe the devices and services used to support communications in data networks and the internet. Describe the role of protocol layers in data networks. Describe the importance of addressing and naming schemes at various layers of data networks in IPv4 and IPv6 environments. Design, calculate, and apply subnet masks and addresses to fulfil given requirements in IPv4 and IPv6 networks. Explain fundamental Ethernet concepts such as media, services, and operations. Build a simple Ethernet network using routers and switches. Use CISCO command-line interface (CLI) commands to perform basic router and switch configurations. Utilise common network utilities to verify small network operations and analyse data traffic.'),
 (1, 'T206', 'Networks (CISCO SWRE)', 'T101', 1, 2, 'Elective', 'Available', 105, 'To enable students to gain practical and technical networking knowledge that will allow them to configure and troubleshoot routers, switches and resolve common issues with networks. Learning Outcomes: Describe basic switching concepts and the operation of CISCO switches. Describe the purpose, nature, and operations of a router, routing tables, and the route lookup process. Describe how VLANs create logically separate networks and how routing occurs between them. Configure and troubleshoot static routing.')
+
+CREATE TABLE majors
+major_name varchar(255),
+subject_id varchar(50),
+subject_name varchar(255),
+year int,
+sem int
+
+INSERT into majors(major_name, subject_id, subject_name, year, sem)
+VALUES('Software Engineering (Plus 5 Year 2 Electives)', 'D201', 'Advanced Programming', '2', '1'),
+ ('Software Engineering', 'D202', 'Software Process', '2', '2'),
+ ('Software Engineering', 'D211', 'Database Development', '2', '1'),
+ ('Software Engineering (Plus 1 Year 3 Elective)', 'D211', 'Software Engineering', '3', '1'),
+ ('Software Engineering', 'D303', 'Mobile Application Development', '3', '2'),
+ ('Software Engineering', 'I302', 'Industry Project', '3', '2'),
+ ('Software Engineering', 'I301', 'Professional Practice', '3', '1'),
+ ('Data Management & Analytics (Plus 5 Year 2 Electives)', 'D211', 'Database Development', '2', '1'),
+ ('Data Management & Analytics', 'D201', 'Advanced Programming', '2', '1'),
+ ('Data Management & Analytics', 'I212', 'Enterprise Data Management', '2', '1'),
+ ('Data Management & Analytics (Plus 1 Year 3 Elective)', 'D311', 'Advanced Database Concepts', '3', 1'),
+ ('Data Management & Analytics', 'I304', 'Data Analytics and Intelligence', '3', '2'),
+ ('Data Management & Analytics', 'I301', 'Professional Practice', '3', '1'),
+ ('Data Management & Analytics', 'I302', 'Industry Project', '3', '2'),
+ ('Web and Mobile Development (Plus 5 Year 2 Electives)', 'D211', 'Database Development', '2', '1'),
+ ('Web and Mobile Development', 'I213', 'Dynamic Web Soultions', '2', '2'),
+ ('Web and Mobile Development', 'I203', 'Digital Multimedia', '2', '1'),
+ ('Web and Mobile Development', 'D303', 'Mobile Application Development', '3', '2'),
+ ('Web and Mobile Development', 'I311', 'Advanced Web Solutions', '3', '1'),
+ ('Web and Mobile Development', 'I302', 'Industry Project', '3', '2'),
+ ('Web and Mobile Development', 'I301', 'Professional Practice', '3', '1'),
+ ('Business and Systems Analysis (Plus 5 Year 2 Electives)', 'D211', 'Database Development', '2', '1'),
+ ('Business and Systems Analysis, 'I221', 'Analysis and Design', '2', '2'),
+ ('Business and Systems Analysis, 'D202', 'Software Process', '2', '2'),
+ ('Business and Systems Analysis, 'I303', 'Management of Information and Communication Technology', '3', '2')
